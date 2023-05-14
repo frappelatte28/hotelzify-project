@@ -1,0 +1,131 @@
+body {
+  background-color: #f8f8f8;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1.1, 1.1);
+  }
+  50% {
+    transform: scale(1.3, 1.3);
+  }
+  100% {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+.title {
+  font-family: "Old Standard TT", serif;
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-size: 80px;
+}
+
+.banner-text {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  bottom: -30px;
+}
+
+.main-btn {
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 0 48px;
+  font-size: 14px;
+  line-height: 60px;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.4s ease-out 0s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #777;
+  border: 2px solid #bead8e;
+}
+
+.main-btn.btn-filled {
+  background-color: #bead8e;
+  color: #fff;
+  box-shadow: 0 14px 24px 0 rgba(190, 173, 142, 0.4);
+}
+
+.main-btn.btn-border {
+  border-color: #bead8e;
+}
+
+.list-items {
+  display: flex;
+  list-style-type: none;
+}
+
+.list-items > li {
+  margin: 10px;
+  padding-left: 10px;
+}
+
+.rooms-image {
+  width: 100%;
+  display: inline-block;
+  height: 450px;
+  animation: zoom-in-zoom-out 7s ease infinite;
+}
+
+.MuiInputBase-root > fieldset {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+.availability-button.MuiButtonBase-root {
+  font-size: 12px;
+  background-color: #a58c5c;
+  color: white;
+  height: 60px;
+  letter-spacing: 2px;
+}
+
+.availability-button.MuiButtonBase-root:hover {
+  color: white;
+  background-color: #9f8d6a;
+}
+
+.date-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.main-date-container {
+  width: 70%;
+  background-color: white;
+  padding: 30px;
+  margin: 2 auto;
+  box-shadow: #d7d4d4;
+}
+#standard-basic {
+  padding: 8.5px;
+}
+
+.date-container > div {
+  width: 180px;
+}
+.date-container > button {
+  width: 200px;
+}
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+  background-color: #f8f8f8 !important;
+}
+
+.banner-main-container {
+  margin: 40px;
+  max-width: 1140px;
+  padding-top: 50px;
+}

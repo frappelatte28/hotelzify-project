@@ -1,0 +1,52 @@
+.about-heading {
+  font-family: "Old Standard TT", serif;
+  text-align: center;
+  font-size: 80px;
+  line-height: 1.125;
+  letter-spacing: -1px;
+  padding: 0 180px;
+}
+.grid-layout {
+  display: flex;
+}
+.grid-layout-item {
+  height: 500px;
+  border: #bead8e;
+  justify-content: center;
+}
+
+.about-section-image {
+  height: 100px;
+  width: 100px;
+  color: #bead8e;
+}
+
+.about-image-card:hover {
+  background-color: #bead8e;
+  height: 180px;
+  width: 180px;
+}
+
+.grid-item1 {
+  position: relative;
+  top: 10%;
+}
+.grid-item2 {
+  position: relative;
+  top: 30%;
+}
+.grid-item3 {
+  position: relative;
+  top: 50%;
+}
+.grid-item4 {
+  position: relative;
+  top: 30%;
+}
+.grid-item5 {
+  position: relative;
+  top: 10%;
+}
+.MuiGrid2-root {
+  overflow: hidden;
+}
