@@ -1,0 +1,66 @@
+.cta-section .cta-inner .cta-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #a08d69;
+}
+
+.icon img {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  top: 30px;
+}
+
+.cta-section .cta-inner .cta-features .icon .single-feature {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 8px 16px 0 rgba(190, 173, 142, 0.2);
+  text-align: center;
+  line-height: 120px;
+  font-size: 60px;
+  color: #bead8e;
+  transition: all 0.3s ease-out 0s;
+  position: relative;
+  z-index: 2;
+}
+
+.single-feature {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 120px 1fr;
+  margin-bottom: 45px;
+}
+
+.icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 8px 16px 0 rgba(190, 173, 142, 0.2);
+  text-align: center;
+  line-height: 120px;
+  font-size: 60px;
+  color: #bead8e;
+  transition: all 0.3s ease-out 0s;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-desc {
+  position: relative;
+  padding-left: 40px;
+  z-index: 1;
+  font-size: 14px;
+}
+.cta-desc h3 {
+  font-family: " Old Standard TT", serif;
+}
+
+.section-title h2 {
+  font-size: 80px;
+  line-height: 1.125;
+  letter-spacing: 1px;
+  font-family: " Old Standard TT", serif;
+}

@@ -1,0 +1,39 @@
+.subscription-section {
+  padding: 120px 0;
+  text-align: center;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  margin: 50px;
+}
+
+.subscribe-form {
+  position: relative;
+}
+.subscribe-form input {
+  width: 100%;
+  border: none;
+  height: 90px;
+  background-color: #f8f8f8;
+  padding-left: 50px;
+  padding-right: 230px;
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: #aeaeae;
+}
+
+.subscribe-form button {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  top: 15px;
+  background-color: #bead8e;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  width: 200px;
+  letter-spacing: 3px;
+  transition: all 0.3s ease-out 0s;
+}

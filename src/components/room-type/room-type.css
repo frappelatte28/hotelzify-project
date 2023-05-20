@@ -1,0 +1,126 @@
+.room-type-section .room-items .room-box {
+  width: 100%;
+  height: 280px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.section-title h2 {
+  font-size: 80px;
+  line-height: 1.125;
+  letter-spacing: -1px;
+}
+
+.section-title span.title-tag {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+}
+.room-types {
+  padding-left: 60px;
+  display: inline-grid;
+  align-items: center;
+}
+
+.room-types-tab:hover button {
+  border-style: groove;
+}
+
+.room-bg-image {
+  background-image: url("../../assets/room1.jpg");
+  background-size: 100% 100%;
+  height: 100%;
+}
+
+.room-card {
+  height: 280px;
+  position: relative;
+}
+
+.room-content {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  z-index: 2;
+  right: 30px;
+}
+
+.room-title {
+  color: white;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+}
+
+.room-cards-container {
+  height: 570;
+}
+
+.room-box {
+  font-family: "Font Awesome 5 Pro";
+  position: relative;
+  color: #fff;
+}
+
+.room-content h3 {
+  font-size: 36px;
+}
+.room-content h3 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.room-box {
+  overflow: hidden;
+}
+
+.room-type-section .room-items .room-box:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(17, 17, 17, 0.50196),
+    rgba(17, 17, 17, 0.25) 44%,
+    rgba(17, 17, 17, 0)
+  );
+  content: "";
+}
+.room-bg {
+  transition: transform 1s;
+}
+.room-bg:hover {
+  transform: scale(1.1);
+}
+
+.room-box:hover .room-link {
+  opacity: 1;
+  visibility: visible;
+  bottom: 30px;
+}
+
+.room-box .room-link {
+  border: 2px solid hsla(0, 0%, 100%, 0.2);
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  border-radius: 50%;
+  z-index: 3;
+  color: #fff;
+  font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+a {
+  transition: all 0.3s ease-out 0s;
+}

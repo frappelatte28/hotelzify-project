@@ -3,7 +3,7 @@ import "../navbar/navbar.css";
 import MobileLogo from "../../assets/phone-icon-black-and-white-17.jpg";
 import EmailLogo from "../../assets/black-and-white-email-icon-1.jpg";
 import Logo from "../../assets/logo.png";
-import ContactLayout from "../contact-layout";
+import ContactLayout from "../contact-layout/contact-layout.js";
 export default function Navbar() {
   return (
     <header>
