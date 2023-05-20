@@ -4,6 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import RoomImage1 from "../../assets/room1.jpg";
 import { Grid } from "@mui/material";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import AiOutlineArrowRight from "@mui/icons-material/ArrowForwardIos";
 
 export default function Roomtype() {
   return (
@@ -114,7 +116,7 @@ function RoomUnit({ rooms = 5, type = "default", image }) {
           </h3>
         </div>
         <a className="room-link" href="/themes/react/miranda/room-details/1">
-          <i className="fal fa-arrow-right"></i>
+          <AiOutlineArrowRight />
         </a>
       </div>
     </div>

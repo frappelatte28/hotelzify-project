@@ -124,3 +124,31 @@
 a {
   transition: all 0.3s ease-out 0s;
 }
+.fa-arrow-right:before {
+  content: "\f061";
+}
+
+.fa,
+.fab,
+.fal,
+.far,
+.fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.fal {
+  font-weight: 300;
+}
+
+.room-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
