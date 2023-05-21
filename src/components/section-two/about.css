@@ -13,7 +13,7 @@
   display: flex;
 }
 .grid-layout-item {
-  height: 500px;
+  height: 450px;
   border: #bead8e;
   justify-content: center;
 }
@@ -55,9 +55,10 @@
 .MuiGrid2-root {
   overflow: hidden;
 }
-.MuiPaper-elevation1 {
-  height: 210px;
+.grid-layout-item > div {
+  height: 180px;
+  width: 90%;
 }
-.MuiPaper-elevation1:hover {
+.grid-layout-item > div:hover {
   background-color: #bead8e;
 }
