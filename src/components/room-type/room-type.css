@@ -1,16 +1,31 @@
-.room-type-section .room-items .room-box {
-  width: 100%;
-  height: 280px;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  margin-top: 15px;
-}
 
-.section-title h2 {
-  font-size: 80px;
+.room-type-section .section-title h2 {
+  /* font-size: 80px; */
+  font-size:  calc(40px + 2vw);
   line-height: 1.125;
   letter-spacing: -1px;
+
+}
+ .room-type-section .side-car-container{
+    margin-top: 0px;
+  }
+
+
+@media screen and (max-width: 786px) {
+  .room-type-section .section-title h2{
+    font-size: 60px !important;
+  }
+  .room-type-section .side-car-container{
+    margin-top: 10px;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  .room-type-section  .section-title h2{
+    font-size: calc(50px + 2vw) !important;
+  }
+
 }
 
 .section-title span.title-tag {
@@ -59,15 +74,18 @@
 }
 
 .room-cards-container {
-  height: 71%;
+  height: 80%;
   width: 90%;
-  margin: 10 auto;
+  margin: 0 auto;
+
 }
 
 .room-box {
   font-family: "Font Awesome 5 Pro";
   position: relative;
   color: #fff;
+  min-height: 200px;
+  height: 100%
 }
 
 .room-content h3 {
@@ -129,24 +147,8 @@
 a {
   transition: all 0.3s ease-out 0s;
 }
-.fa-arrow-right:before {
-  content: "\f061";
-}
 
-.fa,
-.fab,
-.fal,
-.far,
-.fas {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-feature-settings: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
+
 
 .fal {
   font-weight: 300;
@@ -189,3 +191,10 @@ a {
   z-index: 1;
   background-repeat: no-repeat;
 }
+
+
+
+
+
+
+

@@ -18,6 +18,7 @@
 
 .column2-row2 {
   grid-area: column2-row2;
+  font-size: small;
 }
 
 .column1-row1 {
