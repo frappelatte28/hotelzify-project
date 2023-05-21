@@ -1,3 +1,6 @@
+*body {
+  background-color: #f8f8f8;
+}
 .about-heading {
   font-family: "Old Standard TT", serif;
   text-align: center;
@@ -14,19 +17,19 @@
   border: #bead8e;
   justify-content: center;
 }
-.grid-layout-item > div {
+/* .grid-layout-item > div {
   height: 280px;
-}
+} */
 
 .about-section-image {
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   color: #bead8e;
 }
 
 .about-image-card {
-  width: 100%;
-  height: 100%;
+  top: 15%;
+  position: relative;
 }
 
 .grid-item1 {
@@ -51,4 +54,10 @@
 }
 .MuiGrid2-root {
   overflow: hidden;
+}
+.MuiPaper-elevation1 {
+  height: 210px;
+}
+.MuiPaper-elevation1:hover {
+  background-color: #bead8e;
 }
