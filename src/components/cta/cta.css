@@ -7,8 +7,6 @@
 .icon img {
   width: 50%;
   height: 50%;
-  position: relative;
-  top: 30px;
 }
 
 .cta-section .cta-inner .cta-features .icon .single-feature {

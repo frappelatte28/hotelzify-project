@@ -1,6 +1,14 @@
 import React from "react";
 import "./footer.css";
 import Logo from "../../assets/logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faTwitter,
+  faLinkedin,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
 
 export default function Footer() {
   return (
@@ -22,7 +30,27 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div></div>
+      <div className="row copyrights-section">
+        <div className="col copyright-text">Copyright by Slidesigma</div>
+        <div className="col">
+          <div className="row social-links">
+            <div className="col">
+              <a>
+                <FontAwesomeIcon icon={faFacebookF} size="lg" />
+              </a>
+            </div>
+            <div className="col">
+              <FontAwesomeIcon icon={faTwitter} size="lg" />
+            </div>
+            <div className="col">
+              <FontAwesomeIcon icon={faLinkedin} size="lg" />
+            </div>
+            <div className="col">
+              <FontAwesomeIcon icon={faYoutube} size="lg" />
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 }

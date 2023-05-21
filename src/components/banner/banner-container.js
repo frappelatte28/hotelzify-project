@@ -53,20 +53,10 @@ export default function Banner() {
               </h1>
               <ul className="list-items">
                 <li>
-                  <a
-                    class="main-btn btn-filled"
-                    href="/themes/react/miranda/room-details/1"
-                  >
-                    take a tour
-                  </a>
+                  <button class="main-btn btn-filled">take a tour</button>
                 </li>
                 <li>
-                  <a
-                    class="main-btn btn-border"
-                    href="/themes/react/miranda/about"
-                  >
-                    Learn More
-                  </a>
+                  <button class="main-btn btn-border">Learn More</button>
                 </li>
               </ul>
             </Item>
