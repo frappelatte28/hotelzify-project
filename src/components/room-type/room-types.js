@@ -74,7 +74,7 @@ export default function Roomtype() {
                 <div className="row  h-100">
                   <div className="row">
                     <Grid container spacing={2}>
-                      <Grid item xs={8} style={{ height: "100%" }}>
+                      <Grid item xs={12} md={8} style={{ height: "100%" }}>
                         <Grid container style={{ height: "100%" }}>
                           <Grid item xs={12} style={{ height: "100%" }}>
                             <Grid
@@ -113,8 +113,7 @@ export default function Roomtype() {
                           </Grid>
                         </Grid>
                       </Grid>
-                      <Grid item xs={4}>
-                        {" "}
+                      <Grid item xs={12} md={4}>
                         <RoomUnit
                           image={RoomImage1}
                           type="Junior  Suite"
