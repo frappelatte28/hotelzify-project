@@ -28,7 +28,6 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   position: relative;
-  bottom: -30px;
 }
 
 .main-btn {
@@ -72,7 +71,7 @@ body {
 .rooms-image {
   width: 100%;
   display: inline-block;
-  height: 550px;
+  height: 100%;
   animation: zoom-in-zoom-out 7s ease infinite;
 }
 
@@ -103,19 +102,19 @@ body {
 }
 
 .main-date-container {
-  width: 70%;
+  position: relative;
+  z-index: 4;
+  width: 75%;
   background-color: white;
   padding: 30px;
-  margin: 2 auto;
+  margin: 10px auto;
   box-shadow: #d7d4d4;
 }
 #standard-basic {
   padding: 8.5px;
 }
 
-.date-container > div {
-  width: 180px;
-}
+
 .date-container > button {
   width: 200px;
 }
@@ -125,7 +124,53 @@ body {
 } */
 
 .banner-main-container {
+  /* position: relative; */
+  /* top: 183px; */
   margin: 40px;
-  max-width: 1140px;
-  padding-top: 50px;
+  margin-top:183px;
+
+  padding-top: 130px;
+  padding-right: 50px;
+  padding-left: 50px;
+  /* padding: 200px 80px; */
+  height:70vh;
+  
+}
+
+
+
+.hero-title{
+  background-color: transparent !important;
+  box-shadow: none !important;
+  height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+ 
+  .rooms-image{
+    display: none;
+  }
+  .hero-title-parent{
+    width: 100%;
+  }
+
+  .navbar{
+    display: none;
+  }
+  .banner-main-container{
+    margin-top: 0 !important;
+  }
+
+}
+
+.booking-cta{
+
+  margin-top: 20px;
+}
+
+.hero-title{
+padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

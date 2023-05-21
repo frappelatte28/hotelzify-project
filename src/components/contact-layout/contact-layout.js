@@ -14,10 +14,15 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function ContactLayout(props) {
   return (
-    <div class="container-layout">
-      <div class="column1">{props.logo}</div>
-      <div class="column1-row1">{props.title}</div>
-      <div class="column2-row2">{props.contactDetail}</div>
+    <div class="container-layout row g-1">
+      <div class="column1 col-2">{props.logo}</div>
+      <div class="col-10">
+        <div className="row">
+          <div class="col-12">{props.title}</div>
+         <p class="col-12 fw-bold">{props.contactDetail}</p>
+        </div>
+      </div>
+      
     </div>
   );
 }

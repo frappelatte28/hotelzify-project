@@ -9,6 +9,11 @@ import Coffee from "../../assets/coffee-cup.png";
 import Cookie from "../../assets/cookie.png";
 import Cake from "../../assets/muffin.png";
 import Pizza from "../../assets/pizza.png";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -20,6 +25,33 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function About() {
   return (
     <div>
+            <div className="main-date-container">
+        <div className="date-container">
+          <div className="row" style={{ position: "relative" }}>
+            <div className="col">
+              <LocalizationProvider dateAdapter={AdapterDayjs}>
+                <DatePicker label="Arrival " />
+              </LocalizationProvider>
+
+            </div>
+            <div className="col">
+              <LocalizationProvider dateAdapter={AdapterDayjs}>
+                <DatePicker label="Departure " />
+              </LocalizationProvider>
+            </div>
+            <div className="col">
+              <TextField id="standard-basic" label="Guests" variant="standard" />
+
+            </div>
+            <div className="col">
+              <Button className="availability-button">Check Avaialability</Button>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
       <div className="about-heading">
         <div>
           Situated In Prime Position At The Foot Of The Slopes Of Courchevel

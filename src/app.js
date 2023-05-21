@@ -11,10 +11,13 @@ import Cta from "./components/cta/cta";
 export default function App() {
   return (
     <div>
-      <Header />
       <Navbar />
       <Banner />
+      <div>
       <About />
+      </div>
+      
+      
       <Roomtype />
       <Cta />
       <Footer />

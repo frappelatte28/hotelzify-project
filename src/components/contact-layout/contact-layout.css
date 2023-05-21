@@ -1,24 +1,15 @@
 .container-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 10px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "column1 column1-row1 column1-row1"
-    "column1 column2-row2 column2-row2"
-    ". . .";
-  width: 70%;
+
 }
 .column1 {
-  grid-area: column1;
-  width: 50px;
-  height: 50px;
+ 
+
 }
 
 .column2-row2 {
   grid-area: column2-row2;
   font-size: small;
+  overflow: auto;
 }
 
 .column1-row1 {

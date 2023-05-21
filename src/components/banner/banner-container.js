@@ -7,11 +7,7 @@ import "./banner.css";
 import RoomImage1 from "../../assets/room1.jpg";
 import RoomImage2 from "../../assets/room2.jpg";
 import RoomImage3 from "../../assets/room3.jpg";
-import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import { DatePicker } from "@mui/x-date-pickers/DatePicker";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
+
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -40,10 +36,10 @@ export default function Banner() {
 
   return (
     <div className="banner-main-container">
-      <Box sx={{ flexGrow: 1, boxShadow: 0 }}>
-        <Grid container spacing={2} columns={16}>
-          <Grid xs={8}>
-            <Item>
+      <div className="row h-100">
+       
+          <div  className="col-6 hero-title-parent">
+            <div className="w-100 hero-title">
               <span className="banner-text">
                 The ultimate luxury experience
               </span>
@@ -51,48 +47,40 @@ export default function Banner() {
                 The Perfect,
                 <br /> Base for you!
               </h1>
-              <ul className="list-items">
-                <li>
-                  <a
+
+              <div className="row booking-cta">
+                <div className="col-6">
+                  <button
                     class="main-btn btn-filled"
                     href="/themes/react/miranda/room-details/1"
                   >
                     take a tour
-                  </a>
-                </li>
-                <li>
-                  <a
+                  </button>
+                </div>
+                <div className="col-6">
+                  <button
                     class="main-btn btn-border"
                     href="/themes/react/miranda/about"
                   >
                     Learn More
-                  </a>
-                </li>
-              </ul>
-            </Item>
-          </Grid>
-          <Grid xs={8}>
-            <Item>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div className="col-6 h-100">
+            <div className="overflow-hidden h-100">
               <img
                 className="rooms-image"
                 src={roomsImageArr[imageIndex]}
               ></img>
-            </Item>
-          </Grid>
-        </Grid>
-      </Box>
-      <div className="main-date-container">
-        <div className="date-container">
-          <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <DatePicker label="Arrival Date" />
-          </LocalizationProvider>
-          <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <DatePicker label="Departure Date" />
-          </LocalizationProvider>
-          <TextField id="standard-basic" label="Guests" variant="standard" />
-          <Button className="availability-button">Check Avaialability</Button>
-        </div>
-      </div>
+            </div>
+          </div>
+
+          </div>
+        
+  
     </div>
   );
 }
