@@ -55,15 +55,19 @@
 }
 
 .social-links {
+  display: flex;
+  justify-content: right;
   height: 100%;
-  width: 60%;
   align-items: center;
   color: white;
-  float: right;
 }
 
-.social-links div {
+.social-links  > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
+  width: 50px;
   background-color: #212121;
   margin: 5px;
   line-height: 50px;

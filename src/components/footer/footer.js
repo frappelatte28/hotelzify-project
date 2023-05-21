@@ -33,19 +33,19 @@ export default function Footer() {
       <div className="row copyrights-section">
         <div className="col copyright-text">Copyright by Slidesigma</div>
         <div className="col">
-          <div className="row social-links">
-            <div className="col">
+          <div className=" social-links">
+            <div className="">
               <a>
                 <FontAwesomeIcon icon={faFacebookF} size="lg" />
               </a>
             </div>
-            <div className="col">
+            <div className="">
               <FontAwesomeIcon icon={faTwitter} size="lg" />
             </div>
-            <div className="col">
+            <div className="">
               <FontAwesomeIcon icon={faLinkedin} size="lg" />
             </div>
-            <div className="col">
+            <div className="">
               <FontAwesomeIcon icon={faYoutube} size="lg" />
             </div>
           </div>
