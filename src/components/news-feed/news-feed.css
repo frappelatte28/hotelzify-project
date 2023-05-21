@@ -1,0 +1,14 @@
+.news-feed-title span.news-feed-title-tag {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+  font-family: "Archivo", sans-serif;
+}
+
+.news-feed-title h2 {
+  line-height: 1.6;
+  font-size: 52px;
+  font-family: "Archivo", sans-serif;
+  letter-spacing: 3px;
+}

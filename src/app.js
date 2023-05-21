@@ -6,7 +6,7 @@ import About from "./components/section-two/about-section";
 import Roomtype from ".//components/room-type/room-types";
 import Footer from "./components/footer/footer";
 import Cta from "./components/cta/cta";
-
+import NewsFeed from "./components/news-feed/news-feed";
 
 export default function App() {
   return (
@@ -20,6 +20,7 @@ export default function App() {
       
       <Roomtype />
       <Cta />
+      <NewsFeed />
       <Footer />
     </div>
   );
