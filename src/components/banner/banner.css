@@ -72,7 +72,7 @@ body {
 .rooms-image {
   width: 100%;
   display: inline-block;
-  height: 450px;
+  height: 550px;
   animation: zoom-in-zoom-out 7s ease infinite;
 }
 
@@ -119,10 +119,10 @@ body {
 .date-container > button {
   width: 200px;
 }
-.MuiPaper-elevation1 {
+/* .MuiPaper-elevation1 {
   box-shadow: none !important;
   background-color: #f8f8f8 !important;
-}
+} */
 
 .banner-main-container {
   margin: 40px;

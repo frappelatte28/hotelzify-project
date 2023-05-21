@@ -27,12 +27,21 @@ export default function About() {
         </div>
       </div>
       <Box sx={{ flexGrow: 1 }}>
-        <Grid className="grid-layout" columns={10} container spacing={1}>
+        <Grid className="grid-layout" columns={10} container spacing={3}>
           <Grid className="grid-layout-item" item xs={2}>
             <Item className="grid-item1">
               <div className="about-image-card">
                 <img className="about-section-image" src={BoiledChicken}></img>
-                <h3>Chicken</h3>
+                <p
+                  style={{
+                    letterSpacing: "1px",
+                    fontSize: "12px",
+                    textTransform: "uppercase",
+                    paddingTop: "10px",
+                  }}
+                >
+                  Chicken
+                </p>
               </div>
             </Item>
           </Grid>
@@ -40,7 +49,16 @@ export default function About() {
             <Item className="grid-item2">
               <div className="about-image-card">
                 <img className="about-section-image" src={Pizza}></img>
-                <h3>Italian</h3>
+                <p
+                  style={{
+                    letterSpacing: "1px",
+                    fontSize: "12px",
+                    textTransform: "uppercase",
+                    paddingTop: "10px",
+                  }}
+                >
+                  Italian
+                </p>
               </div>
             </Item>
           </Grid>
@@ -48,7 +66,16 @@ export default function About() {
             <Item className="grid-item3">
               <div className="about-image-card">
                 <img className="about-section-image" src={Coffee}></img>
-                <h3>Coffee </h3>
+                <p
+                  style={{
+                    letterSpacing: "1px",
+                    fontSize: "12px",
+                    textTransform: "uppercase",
+                    paddingTop: "10px",
+                  }}
+                >
+                  Coffee{" "}
+                </p>
               </div>
             </Item>
           </Grid>
@@ -56,7 +83,16 @@ export default function About() {
             <Item className="grid-item4">
               <div className="about-image-card">
                 <img className="about-section-image" src={Cake}></img>
-                <h3>Bake cake</h3>
+                <p
+                  style={{
+                    letterSpacing: "1px",
+                    fontSize: "12px",
+                    textTransform: "uppercase",
+                    paddingTop: "10px",
+                  }}
+                >
+                  Bake cake
+                </p>
               </div>
             </Item>
           </Grid>
@@ -64,7 +100,16 @@ export default function About() {
             <Item className="grid-item5">
               <div className="about-image-card">
                 <img className="about-section-image" src={Cookie}></img>
-                <h3>Cookies</h3>
+                <p
+                  style={{
+                    letterSpacing: "1px",
+                    fontSize: "12px",
+                    textTransform: "uppercase",
+                    paddingTop: "10px",
+                  }}
+                >
+                  Cookies
+                </p>
               </div>
             </Item>
           </Grid>
