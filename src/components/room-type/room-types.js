@@ -3,16 +3,23 @@ import "./room-type.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import RoomImage1 from "../../assets/room1.jpg";
+import RoomImage2 from "../../assets/room2.jpg";
+import RoomImage3 from "../../assets/room3.jpg";
+
 import { Grid } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AiOutlineArrowRight from "@mui/icons-material/ArrowForwardIos";
-
+import GridOnRoundedIcon from "@mui/icons-material/GridOnRounded";
+import { Button } from "@mui/material";
 export default function Roomtype() {
   return (
     <div>
       <section className="room-type-section">
-        <div className="container">
-          <div className="row">
+        <div
+          className="container"
+          style={{ position: "relative", zIndex: 2, height: "100vh" }}
+        >
+          <div className="row" style={{ marginBottom: "2.5%" }}>
             <div className="col">
               <div className="section-title ">
                 <span className="title-tag">room type</span>
@@ -22,25 +29,41 @@ export default function Roomtype() {
             <div className="col room-types">
               <div className="row">
                 <div className="col room-types-tab">
-                  <button type="button" className="btn btn-lg rounded-0">
+                  <Button
+                    type="button"
+                    className="btn btn-lg rounded-0"
+                    style={{ color: "black", fontWeight: "500" }}
+                  >
                     Luxury
-                  </button>
+                  </Button>
                 </div>
 
                 <div className="col">
-                  <button type="button" className="btn btn-lg rounded-0">
+                  <Button
+                    type="button"
+                    className="btn btn-lg rounded-0"
+                    style={{ color: "black", fontWeight: "500" }}
+                  >
                     Family
-                  </button>
+                  </Button>
                 </div>
                 <div className="col">
-                  <button type="button" className="btn btn-lg rounded-0">
+                  <Button
+                    type="button"
+                    className="btn btn-lg rounded-0"
+                    style={{ color: "black", fontWeight: "500" }}
+                  >
                     Double Bed
-                  </button>
+                  </Button>
                 </div>
                 <div className="col">
-                  <button type="button" className="btn btn-lg border rounded-0">
+                  <Button
+                    type="button"
+                    className="btn btn-lg border rounded-0"
+                    style={{ color: "black", fontWeight: "700" }}
+                  >
                     Relax
-                  </button>
+                  </Button>
                 </div>
               </div>
             </div>
@@ -51,7 +74,7 @@ export default function Roomtype() {
                 <div className="row  h-100">
                   <div className="row">
                     <Grid container spacing={2}>
-                      <Grid item xs={6} style={{ height: "100%" }}>
+                      <Grid item xs={8} style={{ height: "100%" }}>
                         <Grid container style={{ height: "100%" }}>
                           <Grid item xs={12} style={{ height: "100%" }}>
                             <Grid
@@ -60,10 +83,18 @@ export default function Roomtype() {
                               spacing={1}
                             >
                               <Grid item xs={6}>
-                                <RoomUnit image={RoomImage1}></RoomUnit>
+                                <RoomUnit
+                                  type="Pendora Fame"
+                                  rooms="05"
+                                  image={RoomImage1}
+                                ></RoomUnit>
                               </Grid>
                               <Grid item xs={6}>
-                                <RoomUnit image={RoomImage1}></RoomUnit>
+                                <RoomUnit
+                                  image={RoomImage2}
+                                  type="Pacific Room"
+                                  rooms="10"
+                                ></RoomUnit>
                               </Grid>
                             </Grid>
                             <Grid
@@ -71,16 +102,24 @@ export default function Roomtype() {
                               style={{ height: "50%" }}
                               spacing={1}
                             >
-                              <Grid item xs={12} style={{ paddingTop: "7%" }}>
-                                <RoomUnit image={RoomImage1}></RoomUnit>
+                              <Grid item xs={12} style={{ paddingTop: "4.5%" }}>
+                                <RoomUnit
+                                  image={RoomImage3}
+                                  type="Luxufy Hall of Fame"
+                                  rooms="03"
+                                ></RoomUnit>
                               </Grid>
                             </Grid>
                           </Grid>
                         </Grid>
                       </Grid>
-                      <Grid item xs={6}>
+                      <Grid item xs={4}>
                         {" "}
-                        <RoomUnit image={RoomImage1}></RoomUnit>
+                        <RoomUnit
+                          image={RoomImage1}
+                          type="Junior  Suite"
+                          rooms="12"
+                        ></RoomUnit>
                       </Grid>
                     </Grid>
                   </div>
@@ -108,8 +147,8 @@ function RoomUnit({ rooms = 5, type = "default", image }) {
         ></div>
         <div className="room-content">
           <span className="room-count">
-            <i className="fal fa-th"></i>
-            {rooms} Rooms
+            <GridOnRoundedIcon></GridOnRoundedIcon>
+            <span>{rooms} Rooms</span>
           </span>
           <h3>
             <a href="/themes/react/miranda/room-details/1">{type}</a>

@@ -5,7 +5,7 @@ import FastFood from "../../assets/fast-food.png";
 import SwimmingPool from "../../assets/swimming-pool.png";
 export default function Cta() {
   return (
-    <div style={{ marginTop: "10px" }}>
+    <div style={{ marginTop: "200px" }}>
       <div class="row pt-115 pb-115">
         <div class="container">
           <div class="cta-inner">
@@ -18,7 +18,7 @@ export default function Cta() {
                       <h2>The Thin Escape</h2>
                     </div>
                     <p>
-                      Miranda has everything for your trip &amp; every single
+                      Miranda has everything for your trip & every single
                       things.
                     </p>
                     <button class="main-btn btn-filled">take a tour</button>

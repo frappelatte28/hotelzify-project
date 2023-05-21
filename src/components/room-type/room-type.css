@@ -48,7 +48,10 @@
   z-index: 2;
   right: 30px;
 }
-
+.room-count {
+  font-size: 16px;
+  font-weight: 300;
+}
 .room-title {
   color: white;
   font-family: "Old Standard TT", serif;
@@ -56,7 +59,9 @@
 }
 
 .room-cards-container {
-  height: 570;
+  height: 71%;
+  width: 90%;
+  margin: 10 auto;
 }
 
 .room-box {
@@ -151,4 +156,36 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.room-count {
+  font-size: 20px;
+}
+
+.room-count > svg {
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.room-count {
+  display: flex;
+  align-items: center;
+}
+
+.room-type-section {
+  position: relative;
+  background-image: url("../../assets/bg1.jpeg");
+  background-repeat: no-repeat;
+}
+
+.room-type-section:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url("../../assets/bg2.png");
+  z-index: 1;
+  background-repeat: no-repeat;
 }

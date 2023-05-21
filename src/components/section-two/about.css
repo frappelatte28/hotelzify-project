@@ -14,6 +14,9 @@
   border: #bead8e;
   justify-content: center;
 }
+.grid-layout-item > div {
+  height: 280px;
+}
 
 .about-section-image {
   height: 100px;
@@ -21,10 +24,9 @@
   color: #bead8e;
 }
 
-.about-image-card:hover {
-  background-color: #bead8e;
-  height: 180px;
-  width: 180px;
+.about-image-card {
+  width: 100%;
+  height: 100%;
 }
 
 .grid-item1 {
